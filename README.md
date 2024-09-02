@@ -13,3 +13,9 @@ indexed array
 print_r() - to display array values
 echo $arrayName [0] - to display first value of the array
 array_push($cake, "Black cake", "gosh cake"); - to add values to end of the list¡
+
+associative arrays
+$choco_cake = [
+        "full_name" => "Chocolate cake",
+        "bake_time" => 25,
+]; example
