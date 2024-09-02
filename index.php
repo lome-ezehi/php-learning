@@ -1,7 +1,33 @@
 <?php
     $your_name = "Lome";
-    echo $your_name; 
+    $department = "Software";
+    // echo $your_name; 
 
+    // $your_age = 16;
+    // echo "my name is $your_name"
+    
+    //string functions
+    echo strlen ($your_name);
+    echo strtoupper ($your_name);
+    echo 'my name is '. $your_name. ' and i am in '. $department . ' department';
+    
+    //area of a circle (3.14 * r * r)
+    $radius = '1';
+    $area_of_circle = pi() * $radius**2;
+    // echo $area_of_circle;
+    
+    //pythagoras theorem (3.14 * r * r)
+    $opp = '5';
+    $adj = '4';
+    $hyp = $adj**2 + $opp**2;
+    $answer = sqrt($hyp);
+    $answer = round($answer, 2);
+    echo $answer;
+
+    //random value
+    echo rand(1, 100);
+
+    //arrays
 
 
 
