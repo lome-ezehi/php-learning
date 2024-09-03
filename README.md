@@ -26,3 +26,6 @@ $student[
         ["name" => "Emeka", "matric" => 9123]
 ]
 echo $student [0] ["name"] - to display first string of the array ("Lome")
+
+Conditional statements
+if statements
