@@ -29,7 +29,21 @@
         "dob" => "29/05/2006",
         "fees_status" => "Paid"
     ];
-    print_r($student);
+    // print_r($student);
+
+    //multidimensional array
+    $students = [
+        ["name" => "Emeka Charles", "matric_no" => "VUG/SEN/23/8868"],
+        ["name" => "David King", "matric_no" => "VUG/SEN/23/8176"],
+        ["name" => "Ezehi Lome", "matric_no" => "VUG/SEN/23/8365"]
+    ];
+    print_r($students);
+    echo $students[2]["name"] . " " . $students[2]["matric_no"];
+    print_r($students[1]);
+
+    
+
+
 ?>
 
 <!DOCTYPE html>

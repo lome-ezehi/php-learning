@@ -19,3 +19,10 @@ $choco_cake = [
         "full_name" => "Chocolate cake",
         "bake_time" => 25,
 ]; example
+
+multidimensional arrays - mixture of indexed and associative array
+$student[
+        ["name" => "Lome", "matric" => 8868],
+        ["name" => "Emeka", "matric" => 9123]
+]
+echo $student [0] ["name"] - to display first string of the array ("Lome")
