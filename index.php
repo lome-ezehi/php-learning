@@ -17,5 +17,69 @@
     ];
     $choco_cake["date_created"] = "02/09/2024";
     // echo $choco_cake["ingredients"];
-    print_r($choco_cake);
+
+
+    $student = [
+        "matric_no" => "VUG/SEN/23/8868",
+        "full_name" => "Emeka Charles",
+        "course" => "Software Engineering",
+        "admission_type" => "Direct Entry",
+        "Faculty" => "Engineering",
+        "year_registered" => "2023",
+        "dob" => "29/05/2006",
+        "fees_status" => "Paid"
+    ];
+    print_r($student);
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/materialize.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h1>Student Details</h1>
+            <div class="col s12 l4">
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title green-text text-darken-4 activator" style="font-size : 30px; text-decoration : Underline; font-weight : bold;">
+                            <?php 
+                                echo $student["full_name"];
+                            ?>
+                        </span>
+                        <span class="grey-text text-darken-2" style="font-size : 18px; font-weight : bold;">
+                            <?php 
+                                echo $student["matric_no"];
+                            ?>
+                        </span><br>
+                        <span class="green-text text-darken-4" style="font-size : 18px; font-weight : bold;">
+                            <?php 
+                                echo $student["fees_status"];
+                            ?>
+                        </span>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title">Close</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eius quas dolores. Dolorum, minima praesentium?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 l4"></div>
+            <div class="col s12 l4"></div>
+        </div>
+    </div>
+</body>
+
+<script src="js/jqueryv3.4.1.js"></script>
+        <script src="js/materialize.js"></script>
+        <script>
+            $(document).ready(function(){
+
+            })
+</script>
+</html>
