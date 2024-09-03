@@ -9,12 +9,12 @@
     // print_r($cake);
 
     //associative array
-    $choco_cake = [
-        "full_name" => "Chocolate cake",
-        "bake_time" => 25,
-        "ingredients" => "cocoa, sugar, flour, butter, milk",
-        "likes" => 258
-    ];
+    // $choco_cake = [
+    //     "full_name" => "Chocolate cake",
+    //     "bake_time" => 25,
+    //     "ingredients" => "cocoa, sugar, flour, butter, milk",
+    //     "likes" => 258
+    // ];
     $choco_cake["date_created"] = "02/09/2024";
     // echo $choco_cake["ingredients"];
 
@@ -32,11 +32,11 @@
     // print_r($student);
 
     //multidimensional array
-    $students = [
-        ["name" => "Emeka Charles", "matric_no" => "VUG/SEN/23/8868"],
-        ["name" => "David King", "matric_no" => "VUG/SEN/23/8176"],
-        ["name" => "Ezehi Lome", "matric_no" => "VUG/SEN/23/8365"]
-    ];
+    // $students = [
+    //     ["name" => "Emeka Charles", "matric_no" => "VUG/SEN/23/8868"],
+    //     ["name" => "David King", "matric_no" => "VUG/SEN/23/8176"],
+    //     ["name" => "Ezehi Lome", "matric_no" => "VUG/SEN/23/8365"]
+    // ];
     print_r($students);
     echo $students[2]["name"] . " " . $students[2]["matric_no"];
     print_r($students[1]);
@@ -59,6 +59,45 @@
     }else {
         echo "Your grade is F";
     }
+
+    //loops
+
+    // for loop
+    // for ($a=10; $a <= 25; $a++) { 
+    //     echo '<br>' . 'VUG/SEN/23/111' . $a;
+    // }
+
+
+    // foreach loop - to target items in an array
+    // $cakes = ["Chocolate", "Vanilla", "Strawberry", "Sponge", "Red Velvet"];
+    // foreach ($cakes as $cake) {
+    //     echo '<br>' . $cake ;
+    // }
+
+    //associative array foreach loop
+    $choco_cakes = [
+        "full_name" => "Chocolate cake",
+        "bake_time" => 25,
+        "ingredients" => "cocoa, sugar, flour, butter, milk",
+        "likes" => 258
+    ];
+    foreach ($choco_cakes as $choco_cake) {
+        echo $choco_cake;
+    }
+
+    //multidimensional array foreach loop
+    $students = [
+        ["name" => "Emeka Charles", "matric_no" => "VUG/SEN/23/8868"],
+        ["name" => "David King", "matric_no" => "VUG/SEN/23/8176"],
+        ["name" => "Ezehi Lome", "matric_no" => "VUG/SEN/23/8365"]
+    ];
+    foreach ($students as $student) {
+        echo $student["name"];
+    }
+
+
+    
+
 
 ?>
 

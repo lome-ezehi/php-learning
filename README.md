@@ -29,3 +29,23 @@ echo $student [0] ["name"] - to display first string of the array ("Lome")
 
 Conditional statements
 if statements
+elseif statements
+else statements
+$total_score = 59;
+    if ($total_score >= 80) {
+        echo "Your grade is A";
+    }elseif ($total_score >= 70) {
+        echo "Your grade is B";
+    }elseif ($total_score >= 60) {
+        echo "Your grade is C";
+    }elseif ($total_score >= 50) {
+        echo "Your grade is D";
+    }elseif ($total_score >= 40) {
+        echo "Your grade is E";
+    }else {
+        echo "Your grade is F";
+    }
+
+loops
+
+for loop and for each
