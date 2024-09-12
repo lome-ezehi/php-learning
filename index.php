@@ -18,17 +18,6 @@
     $choco_cake["date_created"] = "02/09/2024";
     // echo $choco_cake["ingredients"];
 
-
-    $student = [
-        "matric_no" => "VUG/SEN/23/8868",
-        "full_name" => "Emeka Charles",
-        "course" => "Software Engineering",
-        "admission_type" => "Direct Entry",
-        "Faculty" => "Engineering",
-        "year_registered" => "2023",
-        "dob" => "29/05/2006",
-        "fees_status" => "Paid"
-    ];
     // print_r($student);
 
     //multidimensional array
@@ -37,28 +26,28 @@
     //     ["name" => "David King", "matric_no" => "VUG/SEN/23/8176"],
     //     ["name" => "Ezehi Lome", "matric_no" => "VUG/SEN/23/8365"]
     // ];
-    print_r($students);
-    echo $students[2]["name"] . " " . $students[2]["matric_no"];
-    print_r($students[1]);
+    // print_r($students);
+    // echo $students[2]["name"] . " " . $students[2]["matric_no"];
+    // print_r($students[1]);
 
     //Conditional Statements
     //if statement
     //else
     //else if
-    $total_score = 59;
-    if ($total_score >= 80) {
-        echo "Your grade is A";
-    }elseif ($total_score >= 70) {
-        echo "Your grade is B";
-    }elseif ($total_score >= 60) {
-        echo "Your grade is C";
-    }elseif ($total_score >= 50) {
-        echo "Your grade is D";
-    }elseif ($total_score >= 40) {
-        echo "Your grade is E";
-    }else {
-        echo "Your grade is F";
-    }
+    // $total_score = 59;
+    // if ($total_score >= 80) {
+    //     echo "Your grade is A";
+    // }elseif ($total_score >= 70) {
+    //     echo "Your grade is B";
+    // }elseif ($total_score >= 60) {
+    //     echo "Your grade is C";
+    // }elseif ($total_score >= 50) {
+    //     echo "Your grade is D";
+    // }elseif ($total_score >= 40) {
+    //     echo "Your grade is E";
+    // }else {
+    //     echo "Your grade is F";
+    // }
 
     //loops
 
@@ -75,29 +64,40 @@
     // }
 
     //associative array foreach loop
-    $choco_cakes = [
-        "full_name" => "Chocolate cake",
-        "bake_time" => 25,
-        "ingredients" => "cocoa, sugar, flour, butter, milk",
-        "likes" => 258
-    ];
-    foreach ($choco_cakes as $choco_cake) {
-        echo $choco_cake;
-    }
+    // $choco_cakes = [
+    //     "full_name" => "Chocolate cake",
+    //     "bake_time" => 25,
+    //     "ingredients" => "cocoa, sugar, flour, butter, milk",
+    //     "likes" => 258
+    // ];
+    // foreach ($choco_cakes as $choco_cake) {
+    //     echo $choco_cake;
+    // }
 
-    //multidimensional array foreach loop
-    $students = [
-        ["name" => "Emeka Charles", "matric_no" => "VUG/SEN/23/8868"],
-        ["name" => "David King", "matric_no" => "VUG/SEN/23/8176"],
-        ["name" => "Ezehi Lome", "matric_no" => "VUG/SEN/23/8365"]
-    ];
-    foreach ($students as $student) {
-        echo $student["name"];
-    }
+    // //multidimensional array foreach loop
+    // $students = [
+    //     ["name" => "Emeka Charles", "matric_no" => "VUG/SEN/23/8868"],
+    //     ["name" => "David King", "matric_no" => "VUG/SEN/23/8176"],
+    //     ["name" => "Ezehi Lome", "matric_no" => "VUG/SEN/23/8365"]
+    // ];
+    // foreach ($students as $student) {
+    //     echo $student["name" . " " . "matric_no"];
+    // }
 
 
     
 
+
+    $student = [
+        "matric_no" => "VUG/SEN/23/8868",
+        "full_name" => "Emeka Charles",
+        "course" => "Software Engineering",
+        "admission_type" => "Direct Entry",
+        "Faculty" => "Engineering",
+        "year_registered" => "2023",
+        "dob" => "29/05/2006",
+        "fees_status" => "Paid"
+    ];
 
 ?>
 
@@ -117,9 +117,7 @@
                 <div class="card">
                     <div class="card-content">
                         <span class="card-title green-text text-darken-4 activator" style="font-size : 30px; text-decoration : Underline; font-weight : bold;">
-                            <?php 
-                                echo $student["full_name"];
-                            ?>
+                            
                         </span>
                         <span class="grey-text text-darken-2" style="font-size : 18px; font-weight : bold;">
                             <?php 
@@ -144,11 +142,11 @@
     </div>
 </body>
 
-<script src="js/jqueryv3.4.1.js"></script>
-        <script src="js/materialize.js"></script>
-        <script>
-            $(document).ready(function(){
+    <script src="js/jqueryv3.4.1.js"></script>
+    <script src="js/materialize.js"></script>
+    <script>
+        $(document).ready(function(){
 
-            })
+        })
 </script>
 </html>

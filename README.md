@@ -63,3 +63,12 @@ $total_score = 59;
 ### loops
 
 for loop and for each
+
+### Include and Require 
+
+The include and require functions let you access content from another php file
+
+The require function is stricter than the include function
+
+### Backend notes
+While working with backend the name property is what we are dealing with
